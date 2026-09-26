@@ -1,171 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-  the head tag isn't displayed but it is used to add meta data or for connecting the page to other pages
--->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML part 1</title>
-    <link rel="icon" href="favicon.png" >
+    <title>Flower Boutique</title>
+    <link rel="icon" type="image/png" href="flower-icon.png">
+    <link rel="stylesheet" href="task6.css">
+
+
 </head>
 <body>
- <!-- HTML: Hypertext Markup Language => Structure -->
-<!-- CSS: Cascading Style Sheets => Design -->
-<!-- JS: JavaScript => Logic + Dynamic -->
-   
+    <header>
+        <h1> Welcome to Flower Boutique:) </Welcome> </h1>
+    <nav>
+        <a href="#Home">Home</a> 
+        <a href="#about">About Us</a> 
+<a href="#products">Products</a>
+<a href="#order">Order Online</a>
+<a href="#contact">Contact Us</a>
+  <a href="https://floward.com/ar-jo" target="_blank">Floward page </a>
+    </nav>
+    </header>
+<section id ="Home" class="hero">
 
-<!--
-html page
-consists of
-html element
-and written by using
-tags
--->
-<!-- There are three types of HTML tags:
-         1] Opening tag: <h1>
-         2] Closing tag: </h1>
-         3] Self closing tag: <input/>
-  -->
+<h2>Make Your Day Beautiful</h2>
+<p> 
+   Fresh and colorful flowers for every special occasion. We create elegant bouquets that bring happiness, love, and joy. The fragrance of flowers can lift your mood and brighten your day. Whether you're celebrating a special occasion or simply want to add beauty to your home, our flower boutique has the perfect blooms for you.
+</p>
+<a href="#order" class="order-btn">Order Now</a>
+<img src="flower.png" alt="flower image">
+</section>
+    <section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Flower Boutique offers fresh and colorful flowers for every occasion.
+        We create elegant bouquets for birthdays, weddings, graduations,
+        and special celebrations.
+    </p>
+
+</section>
 
 
-<!-- HTML can be displayed:
-    1] Block element: take up the whole width and push the next element below it
+<section id="products" class="products">
+<h2>Featured Flowers : </h2>
+<div class="flower-container">
 
+        <div class="flower-item">
+        <h3>Roses🌹</h3>
 
-    2] Inline element: only take the space provided to them and it will allow other elements to be right next to it.
-  -->
-<!-- login page -->
+            <img src="Rose.png" alt="Roses">
+<p>Beautiful roses for love and special moments.</p>
+        </div>
 
-<div id="login">
-    <label >Email:</label><br>
-<input placeholder="write your email" type="text">
-<br><br>
-<label >Password:</label><br>
-<input placeholder="write your password" type="password">
-<br><br>
-<button>Login</button>
+<div class="flower-item">
+ <h3>Tulips🌷</h3>
+<img src="توليب.png" alt="Tulips">
+<p>Colorful tulips for a cheerful touch.</p>
 </div>
-<!-- HTML Tags -->
-
-
-  <!-- 1. Header Tag -->
-<h1>Header 1</h1>
-<h1>Header 1</h1>
-<h2>Header 2</h2>
-<h3>Header 3</h3>
-<h4>Header </h4>
-<h5>Header </h5>
-<h6>Header </h6>
-<!--2.  paragraph tag -->
-<p>this is a paragraph</p>
- <!-- 3. Button Tag -->
-<button>click me 1</button>
-
-<button>click me 2</button>
-<button>click </button>
- <!-- 4. Input Tag -->
-<input >
-<!-- 5. Ordered list Tag  -->
-<ol>
-    <li>wake up</li>
-    <li>coding</li>
-</ol>
-
-<!-- 6. Unordered list Tag  -->
-<ul>
-    <li>wake up</li>
-    <li>coding</li>
+<div class="flower-item">
+    <h3>Sunflowers🌻</h3>
+    <img src="sun.png" alt="Sunflowers">
+<p>Bright sunflowers that make every day beautiful.</p>
+</div>
+</div>
+</section>
+ <h2 >Our Flower Menu🌷</h2>  
+  <ul>
+<li>Roses🌹</li>
+<li>Tulips🌷</li>
+<li>sunflowers🌻</li>
+<li>lavender 💜 </li>
 </ul>
-<!--7. Dropdown list -->
-<select >
-    <option >Jarash</option>
-    <option >Irbid</option>
-    <option >Amman</option>
-</select>
-<!--8. Div tag -->
-<div>
-    <p>par 1</p>
-    <p>par 2</p>
-    <button>click</button>
-</div>
-<!-- 9. Img Tag -->
- <img />
-<!-- 10. Anchor Tag -->
-<a ></a>
+<h2 id="bouquets">Our Bouquets : </h2>
+<h3>(Popular Bouquets)</h3>
+<ol>
+<li>Red Rose Bouquet - $20</li>
+<li>Pink Flowers Bouquet - $25</li>
+<li>Sunflower Bouquet - $18</li>
+</ol>
+<h3>flower video </h3>
+<video autoplay muted loop controls><source src="flower.mp4" type="video/mp4">
+</video>
+<h2>Audio:</h2>
+<audio controls preload="metadata">
+<source src="053.mp3"type="audio/mpeg">
+</audio>
+<hr>
+<h2 id="order">Order Online</h2>
+<form> 
+    <label for="name">name:</label>
+    <input type="text"  id="name" name="name" placeholder="enter your name"required>
+    <br>
+    <br>
+    <label for="email">email:</label>
+    <input type="email"name="email" placeholder="enter your email" required>
+    <br>
+    <br>
+    <label for="phone">phone:</label>
+    <input type="tel" name="phone" placeholder="enter your phone number"required>
+    <br>
+    <br>
+    <label for="address">address:</label>
+    <input type="text" name="address" placeholder="enter your address" required>
+    <br>
+    <br>
+    <label for="product">product:</label>
+    <select name="product">
+ <option value="product">product</option>
 
+        <option value="rose">Rose</option>
+        <option value="tulip">Tulip </option>
+        <option value="sunflower">Sunflower</option>
+    </select>
+    <br>
+    <br>
+    <label for =comments> Feedback: </label>
+    <br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="enter your comments"></textarea><br><br>
+    <button type="submit">Submit Order</button>
+</form>
+<section id="newsletter">
 
-<!-- 11. Script tag to use JavaScript -->
- <script>
-    console.log(" just students");
-    
- </script>
-<!--12.  break tag -->
-<br>
+    <h2>Join Our Newsletter 🌷</h2>
 
+    <p>Subscribe to receive our latest flower news and special offers.</p>
 
- <!--1. title -->
-<p title="just">Just students </p>
-<p title="javascript">JS</p>
- <!--2. placeholder -->
-  <!--3. type -->
+    <form>
 
-<input placeholder="write your name" type="text">
-<input placeholder="write your password" type="password">
+        <input type="text" placeholder="Enter your name" required>
 
-<input type="radio">
-<input type="checkbox">
-<input type="color">
-<input type="range">
+        <input type="email" placeholder="Enter your email" required>
 
-<br><br><br>
+        <button type="submit">Subscribe</button>
 
+    </form>
 
+</section>
+<footer id="contact">
 
- <!-- 4. src -->
+    <h3>Flower Boutique 🌷</h3>
 
+    <p>Follow us on social media</p>
 
-  <!-- 5. alt -->
+    <a href="#instagram link">Instagram</a>
+    <a href="#facebook link">Facebook</a>
+    <a href="#tiktok link">TikTok</a>
 
-
-<img src="1 .jpg" alt="html vs. js">
-
-
-<br><br>
-
-<a href="https://www.google.com/search?q=google+translate&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyEwgCEC4YgwEYxwEYsQMY0QMYgAQyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEIMjAyMmowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8">google translate</a>
-
-<br><br>
-
-<a href="#login">go to login</a>
-
-<a href="mailto:balqees.alkhateb@gmail.com">email us</a>
-<a href="tel:00962787023107">call us</a>
-
-<!-- HTML semantic -->
-<header>
-    <h1>My website</h1>
-</header>
-<nav>
-    <a href="#login">login</a>
-    <a href="#">about</a>
-</nav>
-<main>
-    <h2>HTML semantic elements</h2>
-    <p>HTML semantic elements</p>
-</main>
-<aside>
-    <h3>next</h3>
-    <ul>
-        <li>html basics </li>
-        <li>css flexbox</li>
-    </ul>
-</aside>
-<footer>
-    <p>© just 2026 </p>
 </footer>
-
-<script src="main.js"></script>
 </body>
 </html>
